@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.057),rgba(255, 255, 255, 0.107)),url(image/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(104,96,96);
+    text-decoration: none;
+    font-size: medium;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(229,229,229,255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box h1{
+    font-size: 65px;
+    width: 90%;
+    color:rgb(96,88,88,255);
+    position: absolute;
+    top: 45%;
+    left: 13%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    width: 90%;
+    color:rgba(230, 202, 156, 0.97);
+    position: absolute;
+    top: 70%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+         font-size: 15px;
+    }
+    .nav-links ul li{
+         display: block;
+    }
+    .nav-links{
+         position: absolute;
+         background: rgb(155, 149, 149);
+         height: 100vh;
+         width: 200px;
+         top: 0;
+         right: 0;
+         text-align: left;
+         z-index: 2;
+    }
+}
+
+/*------- techniques -------+*/
+.techniques{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgba(96,88,88,255);
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgba(104,96,96);
+    text-align: center;
+    margin: 10px 0;
+
+}
+p{
+    color:rgba(104,96,96);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 23px;
+    padding: 15px;
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+.techniques-col{
+    flex-basis: 31%;
+    background:rgba(230, 202, 156, 0.632);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.techniques-col:hover{
+    box-shadow: 0 0 20px 0px rgba(96,88,88,255);
+}
+
+/*------- join -------+*/
+.join{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgba(96,88,88,255);
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgba(104,96,96);
+    text-align: center;
+    margin: 10px 0;
+
+}
+p{
+    color:rgba(104,96,96);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 23px;
+    padding: 15px;
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+.join-col{
+    flex-basis: 31%;
+    background:rgba(230, 202, 156, 0.632);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.join-col:hover{
+    box-shadow: 0 0 20px 0px rgba(96,88,88,255);
+}
+
+/*------- gambaq -------+*/
+.gamvaq-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: realative;
+    overflow: hidden;
+}
+.gambaq-col img{
+    width: 100%;
+}
+.layer{
+    background: rgba(255, 255, 255, 0.97);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*------- LOGIN PAGE -------+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 70vh;
+    font-family:'Abril Fatface';
+    background: rgba(229,229,229,255);
+    color:rgba(104,96,96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 80px 20px rgba(104,96,96);
+    perspective: 1000px;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.457),rgba(255, 255, 255, 0.457)),url(image/login.png);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 3px solid rgb(104, 96, 96);
+    margin: 6px 0;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+::placeholder{
+    color: rgb(172,172,172);
+    font-size: 14px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 3px solid rgba(104,96,96);
+    margin: 30px 0 10px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.submit-btn{
+    position: relative;
+}
+.submit-btn::after{
+    content: '\27a4';
+    color: #fff;
+    line-height: 33px;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    border-radius: 60%;
+    background: #333;
+    position: absolute;
+    right: -2px;
+    top: -4px;
+}
+span{
+    font-size: 14px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+.card .btn{
+    margin-top: 100px;
+}
+.card a{
+    color: rgba(195,188,188);
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin-top: -05px;
+}
+
+/*------- SIGNUP -------+*/
