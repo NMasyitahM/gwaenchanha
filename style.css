@@ -122,7 +122,7 @@ p{
 }
 
 .row{
-    margin-top: 3%;
+    margin-top: 03%;
     display: flex;
     justify-content: space-around;
 }
@@ -130,7 +130,7 @@ p{
     flex-basis: 31%;
     background:rgba(230, 202, 156, 0.632);
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 05%;
     padding: 20px 15px;
     box-sizing: border-box;
 }
@@ -165,11 +165,11 @@ p{
     font-size: 15px;
     font-weight: 100;
     line-height: 23px;
-    padding: 15px;
+    padding: 0px;
 }
 
-.row{
-    margin-top: 3%;
+.row2{
+    margin-top: 03%;
     display: flex;
     justify-content: space-around;
 }
@@ -189,7 +189,7 @@ p{
 .gamvaq-col{
     flex-basis: 32%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     position: realative;
     overflow: hidden;
 }
@@ -198,11 +198,16 @@ p{
 }
 .layer{
     background: rgba(255, 255, 255, 0.97);
-    height: 100%;
+    height: 110%;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 50;
     left: 0;
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*------- LOGIN PAGE -------+*/
@@ -319,3 +324,120 @@ span{
 }
 
 /*------- SIGNUP -------+*/
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: fixed;
+    background-size: auto;
+    background-position: 0%;
+}
+
+.contact-title{
+    margin-top: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h1{
+    font-size: 65px;
+    color:rgb(96,88,88,255);
+}
+
+.contact-title h2{
+    font-size: 15px;
+    color: rgb(96,88,70,200);
+}
+
+form{
+    margin-top: 500px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 30px;
+}
+
+textarea{
+    height: 40px;
+}
+
+form .submit{
+    background: rgb(96,88,88,255);
+    border-color: transparent;
+    color:rgba(230, 202, 156, 0.97);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background-color:gray;
+    cursor: pointer;
+}
+
+/*------- QOTD  -------+*/
+.qotd{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h5{
+    
+
+    font-size: 65px;
+    width: 90%;
+    color:rgb(96,88,88,255);
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h6{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgba(104,96,96);
+    text-align: center;
+    margin: 20px 0;
+
+}
+p1{
+    color:rgba(104,96,96);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 23px;
+    padding: 15px;
+}
+
+.row1{
+    margin-top: 43%;
+    display: flex;
+    justify-content: space-around;
+}
+.qotd-col{
+    flex-basis: 31%;
+    background:rgba(230, 202, 156, 0.632);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.qotd-col:hover{
+    box-shadow: 0 0 20px 0px rgba(96,88,88,255);
+}
